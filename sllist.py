@@ -1,5 +1,7 @@
 class SLLNode(object):
 
+    #Singly linked list node class.
+
     def __init__(self, value, nxt):
         self.value = value
         self.nxt = nxt
@@ -10,6 +12,8 @@ class SLLNode(object):
 
 
 class SingleLinkedList(object):
+
+    #Singly linked list class.
 
     def __init__(self):
         self.head = None
