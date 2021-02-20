@@ -1,3 +1,5 @@
+# Test cases to ensure functionality of SingleLinkedList class.
+
 from nose.tools import *
 from sllist import SingleLinkedList
 

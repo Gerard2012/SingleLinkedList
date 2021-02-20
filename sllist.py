@@ -1,6 +1,6 @@
 class SLLNode(object):
 
-    #Singly linked list node class.
+    # Singly linked list node class.
 
     def __init__(self, value, nxt):
         self.value = value
@@ -13,7 +13,7 @@ class SLLNode(object):
 
 class SingleLinkedList(object):
 
-    #Singly linked list class.
+    # Singly linked list class.
 
     def __init__(self):
         self.head = None
@@ -22,8 +22,10 @@ class SingleLinkedList(object):
     def __repr__(self):
         pass
 
+
     def push(self, obj):
-        #Apends a new value to the end of the list.
+
+        # Apends a new value to the end of the list.
 
         if self.head == None:
             new_elem = SLLNode(obj, None)
@@ -40,8 +42,10 @@ class SingleLinkedList(object):
             else:
                 n.nxt = SLLNode(obj, None)
 
+
     def traverse_list(self):
-        #Return the contents of the list.
+
+        # Return the contents of the list.
 
         if self.head == None:
             print('List is empty []')
@@ -52,8 +56,10 @@ class SingleLinkedList(object):
                 print(n.value)
                 n = n.nxt
 
+
     def count(self):
-        #Returns the number of items in the list.
+
+        # Returns the number of items in the list.
 
         if not self.head:
             return 0
@@ -67,8 +73,10 @@ class SingleLinkedList(object):
             else:
                 return x
 
+
     def first(self):
-        #Returns a reference for first item in list but does not remove it.
+
+        # Returns a reference for first item in list but does not remove it.
 
         if not self.head:
             return None
@@ -77,7 +85,8 @@ class SingleLinkedList(object):
             return self.head.value
 
     def last(self):
-        #Return last item in the list.
+
+        # Return last item in the list.
 
         if not self.head:
             return None
@@ -89,8 +98,10 @@ class SingleLinkedList(object):
             else:
                 return n.value
 
+
     def pop(self):
-        #Removes the last item and returns it.
+
+        # Removes the last item and returns it.
 
         if not self.head:
             return None
@@ -109,8 +120,10 @@ class SingleLinkedList(object):
                 prev.nxt = None
                 return n.value
 
+
     def popleft(self):
-        #Removes the first item and returns it.
+
+        # Removes the first item and returns it.
         
         if not self.head:
             return None
@@ -125,9 +138,11 @@ class SingleLinkedList(object):
             self.head = n.nxt
             return n.value
 
+
     def remove(self, obj):
-        #Finds a matching item and removes it from the list.
-        
+
+        # Finds a matching item and removes it from the list.
+
         if not self.head:
             print('List is empty[]')
             return False
@@ -146,9 +161,11 @@ class SingleLinkedList(object):
                     print('Element not found in list[]')
                     return False
 
+
     def get(self, index):
-        #Returns reference of item at given index.
-        
+
+        # Returns reference of item at given index.
+
         if not self.head:
             print('List is empty[]')
 
@@ -167,9 +184,11 @@ class SingleLinkedList(object):
             else:
                 return n.value
 
+
     def dump(self):
-        #Debugging func that dumps content of the list.
-        
+
+        # Debugging func that dumps content of the list.
+
         if not self.head:
             print('List is empty[]')
 
