@@ -84,6 +84,7 @@ class SingleLinkedList(object):
         else:
             return self.head.value
 
+
     def last(self):
 
         # Return last item in the list.
